@@ -12,3 +12,7 @@ driver.findElement(By.xpath("//input[@placeholder="Password")).click();
 
 - Count all input elements using TagName. 
 1
+List ls = driver.findElement(By.tagName("input")); 
+
+System.out.print("Count all input elements using TagName", +ls.size());
+ 
