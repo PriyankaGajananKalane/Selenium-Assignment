@@ -1,1 +1,14 @@
+Assignment 1 – Basic Locators 
+Tasks: 
+Website: https://opensource-demo.orangehrmlive.com/ 
+- Enter username using ID locator. 
 
+driver.findElement(By.xpath("//input[@placeholder='Username")).sendKeys("Admin");
+
+- Enter password using Name locator. 
+driver.findElement(By.xpath("//input[@name="password")).sendKeys("admin123");
+- Click login button using ClassName. 
+driver.findElement(By.xpath("//input[@placeholder="Password")).click();
+
+- Count all input elements using TagName. 
+1
