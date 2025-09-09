@@ -1,1 +1,13 @@
+- Close login popup using XPath with text(). 
 
+
+- Search for 'Mobiles' using XPath with contains(). 
+
+- Apply filter (e.g., “4★ & above”) using XPath axes (following-sibling). 
+
+Ans:
+driver.get("https://www.flipkart.com/");
+		//span[text()='✕']
+		driver.findElement(By.xpath("//input[contains(@title,'Search for Products')]")).sendKeys("Mobiles"+ Keys.ENTER);
+		driver.findElement(By.xpath("//div[text()='Customer Ratings']")).click();
+		driver.findElement(By.xpath("//div[text()='Customer Ratings']/../following-sibling::div//div[@title='4★ & above']")).click();
