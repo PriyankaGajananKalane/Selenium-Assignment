@@ -1,1 +1,17 @@
+Assignment 5 – Dynamic Elements 
+
+Website: https://www.irctc.co.in/ 
+
+Tasks: 
+
+- Select 'From' city using starts-with() in XPath. 
+
+- Select 'To' city using contains(). 
+
+- Select journey date using XPath parent/child navigation. 
+
+Ans:
+
+Select 'From' city using starts-with() in XPath. 
+driver.findElement(By.xpath("//input[starts-with(@aria-autocomplete, 'list') and contains(@aria-controls, 'pr_id_1_list')]")).sendKeys("Mumbai");
 
